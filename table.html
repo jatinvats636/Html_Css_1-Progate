@@ -6,44 +6,53 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Table example</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    td {
+      width: 90px;
+      height: 60px;
+    }
+  </style>
 </head>
 
 <body>
-  <table border="1">
+  <table border="2">
     <tr>
-      <th>Col 1</th>
-      <th>Col 2</th>
-      <th>Col 3</th>
-      <th>Col 4</th>
-      <th>Col 5</th>
+      <td rowspan="3"></td>
+      <td colspan="4"></td>
     </tr>
     <tr>
-      <td>column 1</td>
-      <td></td>
-      <td width="10px"></td>
-      <td></td>
-      <td></td>
+      <td colspan="2"></td>
+      <td rowspan="2" colspan="2"></td>
     </tr>
     <tr>
-      <td>Column 1<br>Column 1</td>
-      <td></td>
-      <td width="500px"></td>
-      <td></td>
-      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td rowspan="2"></td>
+      <td rowspan="2"></td>\
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td rowspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2" rowspan="1.5"></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="2" rowspan="1.5"></td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td colspan="2"></td>
     </tr>
   </table>
 </body>
